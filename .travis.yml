@@ -1,0 +1,6 @@
+
+language: objective-c
+
+xcode_project: TahoeSDK.xcodeproj
+
+xcode_scheme: TahoeSDKTests
