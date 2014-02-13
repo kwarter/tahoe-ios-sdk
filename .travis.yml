@@ -9,7 +9,7 @@ before_install:
 
 xcode_project: TahoeSDK.xcodeproj
 
-xcode_scheme: TahoeSDKTests
+xcode_scheme: TahoeSDK
 
 notifications:
   hipchat: 6582a749bc5e528b65566735b2d0f3@Tahoe
