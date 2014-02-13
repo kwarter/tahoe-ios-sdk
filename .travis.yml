@@ -7,7 +7,7 @@ before_install:
     - gem install cocoapods
     - brew install ios-sim
 
-xcode_project: TahoeSDK.xcodeproj
+xcode_project: TahoeSDK.xcworkspace
 
 xcode_scheme: "Tahoe SDK"
 
