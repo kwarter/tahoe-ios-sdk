@@ -9,6 +9,8 @@
 
 // Model
 
+#import <TahoeSDK/KWChannel.h>
+#import <TahoeSDK/KWMessage.h>
 #import <TahoeSDK/KWQuestion.h>
 
 

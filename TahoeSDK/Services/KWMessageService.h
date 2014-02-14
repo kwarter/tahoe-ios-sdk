@@ -11,6 +11,6 @@
 
 @interface KWMessageService : NSObject
 
-- (void)answerQuestion:(KWQuestion *)question withChoice:(NSString *)choice completion:(void(^)(NSError *error))block;
+- (void)answerQuestion:(KWQuestion *)question withReply:(NSString *)reply completion:(void(^)(NSError *error))block;
 
 @end

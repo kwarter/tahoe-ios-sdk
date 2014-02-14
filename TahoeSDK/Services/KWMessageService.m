@@ -11,9 +11,9 @@
 
 @implementation KWMessageService
 
-- (void)answerQuestion:(KWQuestion *)question withChoice:(NSString *)choice completion:(void(^)(NSError *error))block {
+- (void)answerQuestion:(KWQuestion *)question withReply:(NSString *)reply completion:(void(^)(NSError *error))block {
     KWMessageClient *messageClient = [[KWMessageClient alloc] init];
-    [messageClient answerQuestion:question withChoice:choice completion:^(NSError *error) {
+    [messageClient answerQuestion:question withReply:reply completion:^(NSError *error) {
         if (block) {
             NSLog(@"[TahoeSDK MessageService] didAnswerQuestion: %@", question.title);
             block(error);

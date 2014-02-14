@@ -52,7 +52,7 @@
     [[KWBaseAuthClient sharedClient] enqueueHTTPRequestOperation:operation];
 }
 
-- (void)answerQuestion:(KWQuestion *)question withChoice:(NSString *)choice completion:(void (^)(NSError *))block {
+- (void)answerQuestion:(KWQuestion *)question withReply:(NSString *)reply completion:(void (^)(NSError *))block {
     
     // Validate params
     if (!question) {
@@ -63,9 +63,9 @@
         }
         return;
     }
-    if (!choice) {
+    if (!reply) {
         if (block) {
-            NSDictionary *userInfo = @{KWClientErrorMissingParameterKey: @"choice"};
+            NSDictionary *userInfo = @{KWClientErrorMissingParameterKey: @"reply"};
             NSError *paramsError = [NSError errorWithDomain:KWClientErrorDomain code:KWClientErrorMissingParameterError userInfo:userInfo];
             block(paramsError);
         }
@@ -74,7 +74,7 @@
     
     
     NSDictionary *params = @{
-        @"choice": choice
+        @"choice": reply
     };
     
     NSString *path = [NSString stringWithFormat:@"/channels/%@/messages/%@/replies/", question.channel.identifier, question.identifier];
@@ -82,7 +82,7 @@
     [[KWBaseAuthClient sharedClient] postPath:path parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
         
         // Set the correct choice id in the game if sent back by the server
-        question.userChoice = choice;
+        question.userChoice = reply;
         [[KWDocumentManager sharedDocument] save];
         
         if (block) {

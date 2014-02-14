@@ -108,13 +108,13 @@
 		82CE927F18A322EE0070993C /* KWDocumentManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 82CE927D18A322EE0070993C /* KWDocumentManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		82CE928018A322EE0070993C /* KWDocumentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 82CE927E18A322EE0070993C /* KWDocumentManager.m */; };
 		82CE928118A322EE0070993C /* KWDocumentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 82CE927E18A322EE0070993C /* KWDocumentManager.m */; };
-		82FC228E18A56C0E00D9B775 /* KWMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 82FC228C18A56C0E00D9B775 /* KWMessage.h */; };
+		82FC228E18A56C0E00D9B775 /* KWMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 82FC228C18A56C0E00D9B775 /* KWMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		82FC228F18A56C0E00D9B775 /* KWMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 82FC228D18A56C0E00D9B775 /* KWMessage.m */; };
 		82FC229018A56C0E00D9B775 /* KWMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 82FC228D18A56C0E00D9B775 /* KWMessage.m */; };
-		82FC229318A56C0F00D9B775 /* KWChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = 82FC229118A56C0F00D9B775 /* KWChannel.h */; };
+		82FC229318A56C0F00D9B775 /* KWChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = 82FC229118A56C0F00D9B775 /* KWChannel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		82FC229418A56C0F00D9B775 /* KWChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 82FC229218A56C0F00D9B775 /* KWChannel.m */; };
 		82FC229518A56C0F00D9B775 /* KWChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 82FC229218A56C0F00D9B775 /* KWChannel.m */; };
-		82FC229818A56C0F00D9B775 /* KWQuestion.h in Headers */ = {isa = PBXBuildFile; fileRef = 82FC229618A56C0F00D9B775 /* KWQuestion.h */; };
+		82FC229818A56C0F00D9B775 /* KWQuestion.h in Headers */ = {isa = PBXBuildFile; fileRef = 82FC229618A56C0F00D9B775 /* KWQuestion.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		82FC229918A56C0F00D9B775 /* KWQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 82FC229718A56C0F00D9B775 /* KWQuestion.m */; };
 		82FC229A18A56C0F00D9B775 /* KWQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 82FC229718A56C0F00D9B775 /* KWQuestion.m */; };
 		82FC229E18A56D2600D9B775 /* KWQuestionMapperWorker.h in Headers */ = {isa = PBXBuildFile; fileRef = 82FC229C18A56D2600D9B775 /* KWQuestionMapperWorker.h */; };
@@ -789,6 +789,7 @@
 /* Begin XCBuildConfiguration section */
 		8246D27E176A2B7E00D770D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00D99C45C62840BC87755B6E /* Pods.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_MODULES = YES;
@@ -846,6 +847,7 @@
 		};
 		8246D27F176A2B7E00D770D3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00D99C45C62840BC87755B6E /* Pods.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_MODULES = YES;

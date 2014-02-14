@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <AFNetworking.h>
+#import <AFNetworking/AFNetworking.h>
 
 extern NSString *const KWClientErrorDomain;
 extern NSString *const KWClientErrorMissingParameterKey;
