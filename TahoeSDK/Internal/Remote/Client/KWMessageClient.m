@@ -73,23 +73,40 @@
     }
     
     
+    NSString *replyIdentifier = @""; //TODO: xxx
+    
     NSMutableDictionary *mutableParams = [NSMutableDictionary dictionaryWithObject:reply forKey:@"choice"];
     if (data) {
         [mutableParams setValue:data forKey:@"data"];
     }
     NSDictionary *params = [NSDictionary dictionaryWithDictionary:mutableParams];
     
-    NSString *path = [NSString stringWithFormat:@"/channels/%@/messages/%@/replies/", question.channel.identifier, question.identifier];
+    NSString *path = [NSString stringWithFormat:@"/channels/%@/messages/%@/replies/%@", question.channel.identifier, question.identifier, replyIdentifier];
     
     [[KWBaseAuthClient sharedClient] postPath:path parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
         
-        // Set the correct choice id in the game if sent back by the server
-        question.userChoice = reply;
-        [[KWDocumentManager sharedDocument] save];
+        NSArray *replies = @[
+            @{
+                @"id": replyIdentifier,
+                @"message_id": question.identifier,
+                @"reply": reply,
+            }
+        ];
         
-        if (block) {
-            block(nil);
-        }
+        KWBaseCoreDataClient *client = [[KWBaseCoreDataClient alloc] init];
+        [client objectsFromJSON:replies modelName:@"Reply" completionBlock:^(NSArray *result, NSError *error) {
+            
+            // Set the correct choice id in the game if sent back by the server
+            if (result && !error) {
+                question.userReply = [result firstObject];
+                [[KWDocumentManager sharedDocument] save];
+            }
+            
+            if (block) {
+                block(nil);
+            }
+        }];
+        
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         if (block) {
             block(error);
@@ -112,14 +129,16 @@
     
     NSString *path = [NSString stringWithFormat:@"/replies/%@", question.identifier];
     
-    [[KWBaseAuthClient sharedClient] postPath:path parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    [[KWBaseAuthClient sharedClient] postPath:path parameters:nil success:^(AFHTTPRequestOperation *operation, NSArray *result) {
+        NSArray *replies = [result valueForKey:@"replies"];
         
-        //TODO: xxx
-        NSArray *replies;
+        KWBaseCoreDataClient *client = [[KWBaseCoreDataClient alloc] init];
+        [client objectsFromJSON:replies modelName:@"Replies" completionBlock:^(NSArray *result, NSError *error) {
+            if (block) {
+                block(result, nil);
+            }
+        }];
         
-        if (block) {
-            block(replies, nil);
-        }
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         if (block) {
             block(nil, error);

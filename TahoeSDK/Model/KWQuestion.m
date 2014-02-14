@@ -2,7 +2,7 @@
 //  KWQuestion.m
 //  TahoeSDK
 //
-//  Created by Ludovic Landry on 2/7/14.
+//  Created by Ludovic Landry on 2/14/14.
 //  Copyright (c) 2014 Kwarter, inc. All rights reserved.
 //
 
@@ -10,8 +10,7 @@
 
 @implementation KWQuestion
 
-@dynamic title;
 @dynamic choices;
-@dynamic userChoice;
+@dynamic title;
 
 @end

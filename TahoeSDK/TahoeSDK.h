@@ -12,6 +12,7 @@
 #import <TahoeSDK/KWChannel.h>
 #import <TahoeSDK/KWMessage.h>
 #import <TahoeSDK/KWQuestion.h>
+#import <TahoeSDK/KWReply.h>
 
 
 // Service

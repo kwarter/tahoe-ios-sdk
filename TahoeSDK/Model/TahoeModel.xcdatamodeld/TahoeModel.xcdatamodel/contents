@@ -8,15 +8,25 @@
         <attribute name="identifier" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="timestamp" optional="YES" attributeType="Date" syncable="YES"/>
         <relationship name="channel" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Channel" inverseName="messageOrderedSet" inverseEntity="Channel" syncable="YES"/>
+        <relationship name="replyOrderedSet" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Reply" inverseName="message" inverseEntity="Reply" syncable="YES"/>
+        <relationship name="userReply" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Reply" inverseName="message_" inverseEntity="Reply" syncable="YES"/>
     </entity>
     <entity name="Question" representedClassName="KWQuestion" parentEntity="Message" syncable="YES">
         <attribute name="choices" optional="YES" attributeType="Transformable" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="userChoice" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Reply" representedClassName="KWReply" syncable="YES">
+        <attribute name="data" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="identifier" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="message" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Message" inverseName="replyOrderedSet" inverseEntity="Message" syncable="YES"/>
+        <relationship name="message_" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Message" inverseName="userReply" inverseEntity="Message" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Channel" positionX="72" positionY="189" width="128" height="73"/>
-        <element name="Message" positionX="331" positionY="216" width="128" height="88"/>
-        <element name="Question" positionX="241" positionY="431" width="128" height="88"/>
+        <element name="Channel" positionX="54" positionY="207" width="128" height="73"/>
+        <element name="Message" positionX="331" positionY="216" width="128" height="118"/>
+        <element name="Question" positionX="261" positionY="458" width="128" height="73"/>
+        <element name="Reply" positionX="621" positionY="209" width="128" height="133"/>
     </elements>
 </model>

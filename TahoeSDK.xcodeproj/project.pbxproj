@@ -32,8 +32,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-                236B4CF618ADAC5F00840B9C /* KWMessageClientTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 236B4CF518ADAC5F00840B9C /* KWMessageClientTest.m */; };
-                23CB2C9A18AD5675008D5D99 /* TestDataMessageListSingle.json in Resources */ = {isa = PBXBuildFile; fileRef = 23CB2C9918AD5675008D5D99 /* TestDataMessageListSingle.json */; };
+		236B4CF618ADAC5F00840B9C /* KWMessageClientTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 236B4CF518ADAC5F00840B9C /* KWMessageClientTest.m */; };
+		23CB2C9A18AD5675008D5D99 /* TestDataMessageListSingle.json in Resources */ = {isa = PBXBuildFile; fileRef = 23CB2C9918AD5675008D5D99 /* TestDataMessageListSingle.json */; };
 		823B15C018A55CC700AF3EEC /* KWBaseAuthClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 823B154018A55CC600AF3EEC /* KWBaseAuthClient.h */; };
 		823B15C118A55CC700AF3EEC /* KWBaseAuthClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 823B154118A55CC600AF3EEC /* KWBaseAuthClient.m */; };
 		823B15C218A55CC700AF3EEC /* KWBaseAuthClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 823B154118A55CC600AF3EEC /* KWBaseAuthClient.m */; };
@@ -89,6 +89,18 @@
 		8246D26F176A2B7E00D770D3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8246D258176A2B7000D770D3 /* XCTest.framework */; };
 		8246D270176A2B7E00D770D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82CCA25A1644814C00624487 /* Foundation.framework */; };
 		8246D271176A2B7E00D770D3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82CCA2581644814600624487 /* UIKit.framework */; };
+		828AC0C318AEA6BC000E0C19 /* KWChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = 828AC0C118AEA6BC000E0C19 /* KWChannel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		828AC0C418AEA6BC000E0C19 /* KWChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 828AC0C218AEA6BC000E0C19 /* KWChannel.m */; };
+		828AC0C518AEA6BC000E0C19 /* KWChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 828AC0C218AEA6BC000E0C19 /* KWChannel.m */; };
+		828AC0C818AEA6BD000E0C19 /* KWQuestion.h in Headers */ = {isa = PBXBuildFile; fileRef = 828AC0C618AEA6BD000E0C19 /* KWQuestion.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		828AC0C918AEA6BD000E0C19 /* KWQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 828AC0C718AEA6BD000E0C19 /* KWQuestion.m */; };
+		828AC0CA18AEA6BD000E0C19 /* KWQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 828AC0C718AEA6BD000E0C19 /* KWQuestion.m */; };
+		828AC0CD18AEA6BD000E0C19 /* KWMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 828AC0CB18AEA6BD000E0C19 /* KWMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		828AC0CE18AEA6BD000E0C19 /* KWMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 828AC0CC18AEA6BD000E0C19 /* KWMessage.m */; };
+		828AC0CF18AEA6BD000E0C19 /* KWMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 828AC0CC18AEA6BD000E0C19 /* KWMessage.m */; };
+		828AC0D218AEA6BD000E0C19 /* KWReply.h in Headers */ = {isa = PBXBuildFile; fileRef = 828AC0D018AEA6BD000E0C19 /* KWReply.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		828AC0D318AEA6BD000E0C19 /* KWReply.m in Sources */ = {isa = PBXBuildFile; fileRef = 828AC0D118AEA6BD000E0C19 /* KWReply.m */; };
+		828AC0D418AEA6BD000E0C19 /* KWReply.m in Sources */ = {isa = PBXBuildFile; fileRef = 828AC0D118AEA6BD000E0C19 /* KWReply.m */; };
 		8295E36018A564560054C1B7 /* KWCredentialManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8295E35E18A564560054C1B7 /* KWCredentialManager.h */; };
 		8295E36118A564560054C1B7 /* KWCredentialManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295E35F18A564560054C1B7 /* KWCredentialManager.m */; };
 		8295E36218A564560054C1B7 /* KWCredentialManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295E35F18A564560054C1B7 /* KWCredentialManager.m */; };
@@ -109,15 +121,6 @@
 		82CE927F18A322EE0070993C /* KWDocumentManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 82CE927D18A322EE0070993C /* KWDocumentManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		82CE928018A322EE0070993C /* KWDocumentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 82CE927E18A322EE0070993C /* KWDocumentManager.m */; };
 		82CE928118A322EE0070993C /* KWDocumentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 82CE927E18A322EE0070993C /* KWDocumentManager.m */; };
-		82FC228E18A56C0E00D9B775 /* KWMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 82FC228C18A56C0E00D9B775 /* KWMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		82FC228F18A56C0E00D9B775 /* KWMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 82FC228D18A56C0E00D9B775 /* KWMessage.m */; };
-		82FC229018A56C0E00D9B775 /* KWMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 82FC228D18A56C0E00D9B775 /* KWMessage.m */; };
-		82FC229318A56C0F00D9B775 /* KWChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = 82FC229118A56C0F00D9B775 /* KWChannel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		82FC229418A56C0F00D9B775 /* KWChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 82FC229218A56C0F00D9B775 /* KWChannel.m */; };
-		82FC229518A56C0F00D9B775 /* KWChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 82FC229218A56C0F00D9B775 /* KWChannel.m */; };
-		82FC229818A56C0F00D9B775 /* KWQuestion.h in Headers */ = {isa = PBXBuildFile; fileRef = 82FC229618A56C0F00D9B775 /* KWQuestion.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		82FC229918A56C0F00D9B775 /* KWQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 82FC229718A56C0F00D9B775 /* KWQuestion.m */; };
-		82FC229A18A56C0F00D9B775 /* KWQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 82FC229718A56C0F00D9B775 /* KWQuestion.m */; };
 		82FC229E18A56D2600D9B775 /* KWQuestionMapperWorker.h in Headers */ = {isa = PBXBuildFile; fileRef = 82FC229C18A56D2600D9B775 /* KWQuestionMapperWorker.h */; };
 		82FC229F18A56D2600D9B775 /* KWQuestionMapperWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = 82FC229D18A56D2600D9B775 /* KWQuestionMapperWorker.m */; };
 		82FC22A018A56D2600D9B775 /* KWQuestionMapperWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = 82FC229D18A56D2600D9B775 /* KWQuestionMapperWorker.m */; };
@@ -142,7 +145,7 @@
 		82FC22C618A5BC8700D9B775 /* KWMessageService.m in Sources */ = {isa = PBXBuildFile; fileRef = 82FC22C418A5BC8700D9B775 /* KWMessageService.m */; };
 		82FC22C718A5BC8700D9B775 /* KWMessageService.m in Sources */ = {isa = PBXBuildFile; fileRef = 82FC22C418A5BC8700D9B775 /* KWMessageService.m */; };
 		9CC955667B88484DBCAFB96A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81A82B59DB9443D19741769B /* libPods.a */; };
-                DC00069D64384F23982A3868 /* libPods-TahoeSDKTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F7D00858EA8647B99ABD6D99 /* libPods-TahoeSDKTests.a */; };
+		DC00069D64384F23982A3868 /* libPods-TahoeSDKTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F7D00858EA8647B99ABD6D99 /* libPods-TahoeSDKTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -157,9 +160,9 @@
 
 /* Begin PBXFileReference section */
 		00D99C45C62840BC87755B6E /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
-                236B4CF518ADAC5F00840B9C /* KWMessageClientTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWMessageClientTest.m; sourceTree = "<group>"; };
-                23CB2C9918AD5675008D5D99 /* TestDataMessageListSingle.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TestDataMessageListSingle.json; sourceTree = "<group>"; };
-                69ED2733DF4D49688521BD7B /* Pods-TahoeSDKTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TahoeSDKTests.xcconfig"; path = "Pods/Pods-TahoeSDKTests.xcconfig"; sourceTree = "<group>"; };
+		236B4CF518ADAC5F00840B9C /* KWMessageClientTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWMessageClientTest.m; sourceTree = "<group>"; };
+		23CB2C9918AD5675008D5D99 /* TestDataMessageListSingle.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TestDataMessageListSingle.json; sourceTree = "<group>"; };
+		69ED2733DF4D49688521BD7B /* Pods-TahoeSDKTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TahoeSDKTests.xcconfig"; path = "Pods/Pods-TahoeSDKTests.xcconfig"; sourceTree = "<group>"; };
 		81A82B59DB9443D19741769B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8205E34D168BA9BB00275822 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		8205E393168BB0E500275822 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -202,6 +205,14 @@
 		8246D258176A2B7000D770D3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		8246D26E176A2B7E00D770D3 /* TahoeSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TahoeSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		826A719C16C23D4900B0B555 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		828AC0C118AEA6BC000E0C19 /* KWChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWChannel.h; sourceTree = "<group>"; };
+		828AC0C218AEA6BC000E0C19 /* KWChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWChannel.m; sourceTree = "<group>"; };
+		828AC0C618AEA6BD000E0C19 /* KWQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWQuestion.h; sourceTree = "<group>"; };
+		828AC0C718AEA6BD000E0C19 /* KWQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWQuestion.m; sourceTree = "<group>"; };
+		828AC0CB18AEA6BD000E0C19 /* KWMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWMessage.h; sourceTree = "<group>"; };
+		828AC0CC18AEA6BD000E0C19 /* KWMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWMessage.m; sourceTree = "<group>"; };
+		828AC0D018AEA6BD000E0C19 /* KWReply.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWReply.h; sourceTree = "<group>"; };
+		828AC0D118AEA6BD000E0C19 /* KWReply.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWReply.m; sourceTree = "<group>"; };
 		8295E35E18A564560054C1B7 /* KWCredentialManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWCredentialManager.h; sourceTree = "<group>"; };
 		8295E35F18A564560054C1B7 /* KWCredentialManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWCredentialManager.m; sourceTree = "<group>"; };
 		8295E36618A565A70054C1B7 /* NSDictionary+URLQueryString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+URLQueryString.h"; sourceTree = "<group>"; };
@@ -223,12 +234,6 @@
 		82CE927D18A322EE0070993C /* KWDocumentManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWDocumentManager.h; sourceTree = "<group>"; };
 		82CE927E18A322EE0070993C /* KWDocumentManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWDocumentManager.m; sourceTree = "<group>"; };
 		82EB8DA3171671F000F3A80F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		82FC228C18A56C0E00D9B775 /* KWMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWMessage.h; sourceTree = "<group>"; };
-		82FC228D18A56C0E00D9B775 /* KWMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWMessage.m; sourceTree = "<group>"; };
-		82FC229118A56C0F00D9B775 /* KWChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWChannel.h; sourceTree = "<group>"; };
-		82FC229218A56C0F00D9B775 /* KWChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWChannel.m; sourceTree = "<group>"; };
-		82FC229618A56C0F00D9B775 /* KWQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWQuestion.h; sourceTree = "<group>"; };
-		82FC229718A56C0F00D9B775 /* KWQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWQuestion.m; sourceTree = "<group>"; };
 		82FC229C18A56D2600D9B775 /* KWQuestionMapperWorker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWQuestionMapperWorker.h; sourceTree = "<group>"; };
 		82FC229D18A56D2600D9B775 /* KWQuestionMapperWorker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWQuestionMapperWorker.m; sourceTree = "<group>"; };
 		82FC22A118A56D7C00D9B775 /* KWMessageMapperWorker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWMessageMapperWorker.h; sourceTree = "<group>"; };
@@ -246,7 +251,7 @@
 		82FC22C318A5BC8700D9B775 /* KWMessageService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWMessageService.h; sourceTree = "<group>"; };
 		82FC22C418A5BC8700D9B775 /* KWMessageService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWMessageService.m; sourceTree = "<group>"; };
 		F6B527E816B6FFC400335320 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-                F7D00858EA8647B99ABD6D99 /* libPods-TahoeSDKTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TahoeSDKTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7D00858EA8647B99ABD6D99 /* libPods-TahoeSDKTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TahoeSDKTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -258,7 +263,7 @@
 				8246D271176A2B7E00D770D3 /* UIKit.framework in Frameworks */,
 				8246D270176A2B7E00D770D3 /* Foundation.framework in Frameworks */,
 				82BAF80718233B2E00F8BB35 /* libz.dylib in Frameworks */,
-                                DC00069D64384F23982A3868 /* libPods-TahoeSDKTests.a in Frameworks */,
+				DC00069D64384F23982A3868 /* libPods-TahoeSDKTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,7 +390,7 @@
 				8280BE2E16446D86007C09DA /* Frameworks */,
 				8280BE2D16446D86007C09DA /* Products */,
 				00D99C45C62840BC87755B6E /* Pods.xcconfig */,
-                                69ED2733DF4D49688521BD7B /* Pods-TahoeSDKTests.xcconfig */,
+				69ED2733DF4D49688521BD7B /* Pods-TahoeSDKTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 			tabWidth = 4;
@@ -414,7 +419,7 @@
 				8246D258176A2B7000D770D3 /* XCTest.framework */,
 				82BAF80618233B2E00F8BB35 /* libz.dylib */,
 				81A82B59DB9443D19741769B /* libPods.a */,
-                                F7D00858EA8647B99ABD6D99 /* libPods-TahoeSDKTests.a */,
+				F7D00858EA8647B99ABD6D99 /* libPods-TahoeSDKTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -447,7 +452,7 @@
 			children = (
 				82CE926818A31D660070993C /* TahoeSDKTests.m */,
 				82CE926C18A31D780070993C /* Supporting Files */,
-                                236B4CF518ADAC5F00840B9C /* KWMessageClientTest.m */,
+				236B4CF518ADAC5F00840B9C /* KWMessageClientTest.m */,
 			);
 			path = TahoeSDKTests;
 			sourceTree = "<group>";
@@ -458,7 +463,7 @@
 				82CE926518A31D660070993C /* InfoPlist.strings */,
 				82C7B22018A4472D003C4903 /* TahoeSDKTests-Prefix.pch */,
 				82CE926718A31D660070993C /* TahoeSDKTests-Info.plist */,
-                                23CB2C9918AD5675008D5D99 /* TestDataMessageListSingle.json */,
+				23CB2C9918AD5675008D5D99 /* TestDataMessageListSingle.json */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -467,12 +472,14 @@
 			isa = PBXGroup;
 			children = (
 				82CE927318A321D80070993C /* TahoeModel.xcdatamodeld */,
-				82FC229618A56C0F00D9B775 /* KWQuestion.h */,
-				82FC229718A56C0F00D9B775 /* KWQuestion.m */,
-				82FC229118A56C0F00D9B775 /* KWChannel.h */,
-				82FC229218A56C0F00D9B775 /* KWChannel.m */,
-				82FC228C18A56C0E00D9B775 /* KWMessage.h */,
-				82FC228D18A56C0E00D9B775 /* KWMessage.m */,
+				828AC0C118AEA6BC000E0C19 /* KWChannel.h */,
+				828AC0C218AEA6BC000E0C19 /* KWChannel.m */,
+				828AC0C618AEA6BD000E0C19 /* KWQuestion.h */,
+				828AC0C718AEA6BD000E0C19 /* KWQuestion.m */,
+				828AC0CB18AEA6BD000E0C19 /* KWMessage.h */,
+				828AC0CC18AEA6BD000E0C19 /* KWMessage.m */,
+				828AC0D018AEA6BD000E0C19 /* KWReply.h */,
+				828AC0D118AEA6BD000E0C19 /* KWReply.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -507,9 +514,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82FC229818A56C0F00D9B775 /* KWQuestion.h in Headers */,
 				82FC22BD18A5B5DD00D9B775 /* KWMessageClient.h in Headers */,
-				82FC229318A56C0F00D9B775 /* KWChannel.h in Headers */,
 				82FC22A718A56D9C00D9B775 /* KWMessageMapperRegistration.h in Headers */,
 				82FC22B418A5967500D9B775 /* KWChannelServiceDelegate.h in Headers */,
 				823B165F18A55CC700AF3EEC /* KWMergerWorker.h in Headers */,
@@ -518,13 +523,15 @@
 				8295E36818A565A70054C1B7 /* NSDictionary+URLQueryString.h in Headers */,
 				823B165618A55CC700AF3EEC /* KWBasicMergerWorker.h in Headers */,
 				823B167118A5601400AF3EEC /* NSObject+Registration.h in Headers */,
+				828AC0D218AEA6BD000E0C19 /* KWReply.h in Headers */,
 				823B162E18A55CC700AF3EEC /* KWMapperRegistration.h in Headers */,
-				82FC228E18A56C0E00D9B775 /* KWMessage.h in Headers */,
 				8295E37318A567420054C1B7 /* NSString+URLEncoding.h in Headers */,
 				8295E36018A564560054C1B7 /* KWCredentialManager.h in Headers */,
+				828AC0CD18AEA6BD000E0C19 /* KWMessage.h in Headers */,
 				82CE927F18A322EE0070993C /* KWDocumentManager.h in Headers */,
 				82FC22B018A593C600D9B775 /* KWChannelService.h in Headers */,
 				823B165918A55CC700AF3EEC /* KWManagedObjectCache.h in Headers */,
+				828AC0C818AEA6BD000E0C19 /* KWQuestion.h in Headers */,
 				823B165C18A55CC700AF3EEC /* KWMerger.h in Headers */,
 				82FC229E18A56D2600D9B775 /* KWQuestionMapperWorker.h in Headers */,
 				823B162B18A55CC700AF3EEC /* KWMapper.h in Headers */,
@@ -542,6 +549,7 @@
 				823B15C318A55CC700AF3EEC /* KWBaseCoreDataClient.h in Headers */,
 				823B162818A55CC700AF3EEC /* KWMappedResource.h in Headers */,
 				823B15C918A55CC700AF3EEC /* KWPipeline.h in Headers */,
+				828AC0C318AEA6BC000E0C19 /* KWChannel.h in Headers */,
 				823B15C018A55CC700AF3EEC /* KWBaseAuthClient.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -553,11 +561,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8246D27D176A2B7E00D770D3 /* Build configuration list for PBXNativeTarget "TahoeSDKTests" */;
 			buildPhases = (
-                                C00FB42FB4B74BFE8BE5BE53 /* Check Pods Manifest.lock */,
+				C00FB42FB4B74BFE8BE5BE53 /* Check Pods Manifest.lock */,
 				8246D26A176A2B7E00D770D3 /* Sources */,
 				8246D26B176A2B7E00D770D3 /* Frameworks */,
 				8246D26C176A2B7E00D770D3 /* Resources */,
-                                25D1E856C7E44243ACA825CB /* Copy Pods Resources */,
+				25D1E856C7E44243ACA825CB /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -629,7 +637,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				82CE926918A31D660070993C /* InfoPlist.strings in Resources */,
-                                23CB2C9A18AD5675008D5D99 /* TestDataMessageListSingle.json in Resources */,
+				23CB2C9A18AD5675008D5D99 /* TestDataMessageListSingle.json in Resources */,
 				82CE926A18A31D660070993C /* TahoeSDKTests-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -637,21 +645,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-                25D1E856C7E44243ACA825CB /* Copy Pods Resources */ = {
-                        isa = PBXShellScriptBuildPhase;
-                        buildActionMask = 2147483647;
-                        files = (
-                        );
-                        inputPaths = (
-                        );
-                        name = "Copy Pods Resources";
-                        outputPaths = (
-                        );
-                        runOnlyForDeploymentPostprocessing = 0;
-                        shellPath = /bin/sh;
-                        shellScript = "\"${SRCROOT}/Pods/Pods-TahoeSDKTests-resources.sh\"\n";
-                        showEnvVarsInLog = 0;
-                };
+		25D1E856C7E44243ACA825CB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-TahoeSDKTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		77A18A30421342FE9A1D13DE /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -694,21 +702,21 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nNAME=KwarterSDK\nFRAMEWORK=\"${NAME}.framework\"\nBUILD_TYPE=Release\nVERSION=`/usr/libexec/PlistBuddy -c \"Print CFBundleShortVersionString\" \"${NAME}/${NAME}-Info.plist\"`\n\nTARGET_DIR=\"${PROJECT_DIR}/Build\"\n\necho \"Cleaning target\"\n[ -d \"${TARGET_DIR}\" ] && rm -rf $TARGET_DIR\nmkdir -p $TARGET_DIR\n\n# Build framework the for Simulator and iOS\necho \"Build\"\nxcodebuild -project \"${NAME}.xcodeproj\" -scheme \"${NAME}\" -sdk \"iphonesimulator\" -configuration \"${BUILD_TYPE}\"\nxcodebuild -project \"${NAME}.xcodeproj\" -scheme \"${NAME}\" -sdk \"iphoneos\" -configuration \"${BUILD_TYPE}\"\n\n# Copy Framework and remove library\ncp -r \"${BUILD_DIR}/${BUILD_TYPE}-iphoneos/${FRAMEWORK}\" $TARGET_DIR\nrm \"${TARGET_DIR}/${FRAMEWORK}/${NAME}\"\n\nARCHIVE_DIR=\"${TARGET_DIR}/${FRAMEWORK}\"\n\n# Generate universal library\nxcrun -sdk iphoneos lipo -output \"${ARCHIVE_DIR}/${NAME}\" -create \"${BUILD_DIR}/${BUILD_TYPE}-iphoneos/${FRAMEWORK}/${NAME}\" \"${BUILD_DIR}/${BUILD_TYPE}-iphonesimulator/${FRAMEWORK}/${NAME}\"\n\n# Rename Core Data model file\nmv \"${ARCHIVE_DIR}/KwarterModel.momd/KwarterModel.mom\" \"${ARCHIVE_DIR}/KwarterModel.mom\"\nrm -rf \"${ARCHIVE_DIR}/KwarterModel.momd\"\nmv \"${ARCHIVE_DIR}/KwarterModel.mom\" \"${ARCHIVE_DIR}/KwarterModel.momd\"\n\n# Copy SDK resources\ncp -r \"${SRCROOT}/${NAME}/DefaultEnvironments.bundle\" \"${ARCHIVE_DIR}/DefaultEnvironments.bundle\"\ncp -r \"${SRCROOT}/${NAME}/${NAME}.bundle\" \"${ARCHIVE_DIR}/${NAME}.bundle\"\n\ntar -czf \"${NAME}-${VERSION}.tgz\" -C $TARGET_DIR $FRAMEWORK\nmv \"${NAME}-${VERSION}.tgz\" \"${TARGET_DIR}/${NAME}-${VERSION}.tgz\"";
 		};
-                C00FB42FB4B74BFE8BE5BE53 /* Check Pods Manifest.lock */ = {
-                        isa = PBXShellScriptBuildPhase;
-                        buildActionMask = 2147483647;
-                        files = (
-                        );
-                        inputPaths = (
-                        );
-                        name = "Check Pods Manifest.lock";
-                        outputPaths = (
-                        );
-                        runOnlyForDeploymentPostprocessing = 0;
-                        shellPath = /bin/sh;
-                        shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-                        showEnvVarsInLog = 0;
-                };
+		C00FB42FB4B74BFE8BE5BE53 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		D0A7365272CB4C1A965F9425 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -732,11 +740,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				823B165B18A55CC700AF3EEC /* KWManagedObjectCache.m in Sources */,
+				828AC0C518AEA6BC000E0C19 /* KWChannel.m in Sources */,
 				823B167318A5601400AF3EEC /* NSObject+Registration.m in Sources */,
 				823B162A18A55CC700AF3EEC /* KWMappedResource.m in Sources */,
 				82CE927618A321D80070993C /* TahoeModel.xcdatamodeld in Sources */,
 				823B15CB18A55CC700AF3EEC /* KWPipeline.m in Sources */,
 				82FC22BF18A5B5DD00D9B775 /* KWMessageClient.m in Sources */,
+				828AC0CF18AEA6BD000E0C19 /* KWMessage.m in Sources */,
 				82CE926B18A31D660070993C /* TahoeSDKTests.m in Sources */,
 				82FC22A018A56D2600D9B775 /* KWQuestionMapperWorker.m in Sources */,
 				82FC22B218A593C600D9B775 /* KWChannelService.m in Sources */,
@@ -744,11 +754,8 @@
 				823B162D18A55CC700AF3EEC /* KWMapper.m in Sources */,
 				823B15C518A55CC700AF3EEC /* KWBaseCoreDataClient.m in Sources */,
 				8295E36218A564560054C1B7 /* KWCredentialManager.m in Sources */,
-				82FC229018A56C0E00D9B775 /* KWMessage.m in Sources */,
-                                236B4CF618ADAC5F00840B9C /* KWMessageClientTest.m in Sources */,
-				82FC229518A56C0F00D9B775 /* KWChannel.m in Sources */,
+				236B4CF618ADAC5F00840B9C /* KWMessageClientTest.m in Sources */,
 				8295E37518A567420054C1B7 /* NSString+URLEncoding.m in Sources */,
-				82FC229A18A56C0F00D9B775 /* KWQuestion.m in Sources */,
 				823B15C218A55CC700AF3EEC /* KWBaseAuthClient.m in Sources */,
 				823B163718A55CC700AF3EEC /* KWMixedMapperWorker.m in Sources */,
 				823B166118A55CC700AF3EEC /* KWMergerWorker.m in Sources */,
@@ -762,8 +769,10 @@
 				823B165E18A55CC700AF3EEC /* KWMerger.m in Sources */,
 				823B15CE18A55CC700AF3EEC /* KWPipelineObject.m in Sources */,
 				823B163D18A55CC700AF3EEC /* KWPassThroughMapperWorker.m in Sources */,
+				828AC0CA18AEA6BD000E0C19 /* KWQuestion.m in Sources */,
 				82CE928118A322EE0070993C /* KWDocumentManager.m in Sources */,
 				823B15C818A55CC700AF3EEC /* KWFetcher.m in Sources */,
+				828AC0D418AEA6BD000E0C19 /* KWReply.m in Sources */,
 				82FC22C718A5BC8700D9B775 /* KWMessageService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -775,7 +784,6 @@
 				8295E37418A567420054C1B7 /* NSString+URLEncoding.m in Sources */,
 				82FC22AB18A56DB800D9B775 /* KWChannelMapperWorker.m in Sources */,
 				82FC229F18A56D2600D9B775 /* KWQuestionMapperWorker.m in Sources */,
-				82FC229918A56C0F00D9B775 /* KWQuestion.m in Sources */,
 				823B167218A5601400AF3EEC /* NSObject+Registration.m in Sources */,
 				82FC22C618A5BC8700D9B775 /* KWMessageService.m in Sources */,
 				823B163018A55CC700AF3EEC /* KWMapperRegistry.m in Sources */,
@@ -786,7 +794,9 @@
 				823B15C118A55CC700AF3EEC /* KWBaseAuthClient.m in Sources */,
 				823B163C18A55CC700AF3EEC /* KWPassThroughMapperWorker.m in Sources */,
 				823B165718A55CC700AF3EEC /* KWBasicMergerWorker.m in Sources */,
+				828AC0CE18AEA6BD000E0C19 /* KWMessage.m in Sources */,
 				82FC22B918A5B54700D9B775 /* KWNetworkActivityIndicator.m in Sources */,
+				828AC0C918AEA6BD000E0C19 /* KWQuestion.m in Sources */,
 				823B165D18A55CC700AF3EEC /* KWMerger.m in Sources */,
 				8295E36118A564560054C1B7 /* KWCredentialManager.m in Sources */,
 				823B165A18A55CC700AF3EEC /* KWManagedObjectCache.m in Sources */,
@@ -794,16 +804,16 @@
 				823B15D018A55CC700AF3EEC /* KWPipelineStage.m in Sources */,
 				82FC22BE18A5B5DD00D9B775 /* KWMessageClient.m in Sources */,
 				823B162C18A55CC700AF3EEC /* KWMapper.m in Sources */,
+				828AC0C418AEA6BC000E0C19 /* KWChannel.m in Sources */,
 				823B163618A55CC700AF3EEC /* KWMixedMapperWorker.m in Sources */,
 				823B163318A55CC700AF3EEC /* KWMapperWorker.m in Sources */,
 				823B15CD18A55CC700AF3EEC /* KWPipelineObject.m in Sources */,
 				823B15CA18A55CC700AF3EEC /* KWPipeline.m in Sources */,
 				82FC22B118A593C600D9B775 /* KWChannelService.m in Sources */,
+				828AC0D318AEA6BD000E0C19 /* KWReply.m in Sources */,
 				823B166018A55CC700AF3EEC /* KWMergerWorker.m in Sources */,
 				823B15C718A55CC700AF3EEC /* KWFetcher.m in Sources */,
 				82FC22A418A56D7C00D9B775 /* KWMessageMapperWorker.m in Sources */,
-				82FC228F18A56C0E00D9B775 /* KWMessage.m in Sources */,
-				82FC229418A56C0F00D9B775 /* KWChannel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -831,7 +841,7 @@
 /* Begin XCBuildConfiguration section */
 		8246D27E176A2B7E00D770D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-                        baseConfigurationReference = 69ED2733DF4D49688521BD7B /* Pods-TahoeSDKTests.xcconfig */;
+			baseConfigurationReference = 69ED2733DF4D49688521BD7B /* Pods-TahoeSDKTests.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_MODULES = YES;
@@ -889,7 +899,7 @@
 		};
 		8246D27F176A2B7E00D770D3 /* Release */ = {
 			isa = XCBuildConfiguration;
-                        baseConfigurationReference = 69ED2733DF4D49688521BD7B /* Pods-TahoeSDKTests.xcconfig */;
+			baseConfigurationReference = 69ED2733DF4D49688521BD7B /* Pods-TahoeSDKTests.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_MODULES = YES;
