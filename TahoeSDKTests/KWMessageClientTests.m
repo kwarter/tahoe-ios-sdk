@@ -10,11 +10,11 @@
 #import <OHHTTPStubs/OHHTTPStubs.h>
 #import "KWMessageClient.h"
 
-@interface KWMessageClientTest : XCTestCase
+@interface KWMessageClientTests : XCTestCase
 
 @end
 
-@implementation KWMessageClientTest
+@implementation KWMessageClientTests
 
 - (void)setUp
 {
@@ -28,7 +28,7 @@
     [super tearDown];
 }
 
--(void) testShouldReceiveOneMessage {
+- (void)testShouldReceiveOneMessage {
 
     KWMessageClient *messageClient = [[KWMessageClient alloc] init];
     __block BOOL hasCalledBack = NO;

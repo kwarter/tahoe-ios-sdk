@@ -3,8 +3,8 @@
         {
             "id": "45985ed0-cf4d-48e4-885d-f8fe99c0d8a1",
             "type": "question",
+            "title": "This is a title",
             "data": {
-                "title": "This is a title",
                 "choices": [
                     "Choice A",
                     "Choice B",

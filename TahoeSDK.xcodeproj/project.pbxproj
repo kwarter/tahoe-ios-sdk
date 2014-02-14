@@ -32,7 +32,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		236B4CF618ADAC5F00840B9C /* KWMessageClientTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 236B4CF518ADAC5F00840B9C /* KWMessageClientTest.m */; };
+		238E995418AEDA4E00D9C7A4 /* KWMessageClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 236B4CF518ADAC5F00840B9C /* KWMessageClientTests.m */; };
 		23CB2C9A18AD5675008D5D99 /* TestDataMessageListSingle.json in Resources */ = {isa = PBXBuildFile; fileRef = 23CB2C9918AD5675008D5D99 /* TestDataMessageListSingle.json */; };
 		823B15C018A55CC700AF3EEC /* KWBaseAuthClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 823B154018A55CC600AF3EEC /* KWBaseAuthClient.h */; };
 		823B15C118A55CC700AF3EEC /* KWBaseAuthClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 823B154118A55CC600AF3EEC /* KWBaseAuthClient.m */; };
@@ -115,7 +115,6 @@
 		82CE926318A31D5A0070993C /* TahoeSDK-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 82CE926218A31D5A0070993C /* TahoeSDK-Prefix.pch */; };
 		82CE926918A31D660070993C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 82CE926518A31D660070993C /* InfoPlist.strings */; };
 		82CE926A18A31D660070993C /* TahoeSDKTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 82CE926718A31D660070993C /* TahoeSDKTests-Info.plist */; };
-		82CE926B18A31D660070993C /* TahoeSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 82CE926818A31D660070993C /* TahoeSDKTests.m */; };
 		82CE927518A321D80070993C /* TahoeModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 82CE927318A321D80070993C /* TahoeModel.xcdatamodeld */; };
 		82CE927618A321D80070993C /* TahoeModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 82CE927318A321D80070993C /* TahoeModel.xcdatamodeld */; };
 		82CE927F18A322EE0070993C /* KWDocumentManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 82CE927D18A322EE0070993C /* KWDocumentManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -160,7 +159,7 @@
 
 /* Begin PBXFileReference section */
 		00D99C45C62840BC87755B6E /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
-		236B4CF518ADAC5F00840B9C /* KWMessageClientTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWMessageClientTest.m; sourceTree = "<group>"; };
+		236B4CF518ADAC5F00840B9C /* KWMessageClientTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWMessageClientTests.m; sourceTree = "<group>"; };
 		23CB2C9918AD5675008D5D99 /* TestDataMessageListSingle.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TestDataMessageListSingle.json; sourceTree = "<group>"; };
 		69ED2733DF4D49688521BD7B /* Pods-TahoeSDKTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TahoeSDKTests.xcconfig"; path = "Pods/Pods-TahoeSDKTests.xcconfig"; sourceTree = "<group>"; };
 		81A82B59DB9443D19741769B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -228,7 +227,6 @@
 		82CE926218A31D5A0070993C /* TahoeSDK-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TahoeSDK-Prefix.pch"; sourceTree = "<group>"; };
 		82CE926618A31D660070993C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		82CE926718A31D660070993C /* TahoeSDKTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TahoeSDKTests-Info.plist"; sourceTree = "<group>"; };
-		82CE926818A31D660070993C /* TahoeSDKTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TahoeSDKTests.m; sourceTree = "<group>"; };
 		82CE926E18A31F010070993C /* TahoeSDK-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TahoeSDK-Info.plist"; sourceTree = "<group>"; };
 		82CE927418A321D80070993C /* TahoeModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TahoeModel.xcdatamodel; sourceTree = "<group>"; };
 		82CE927D18A322EE0070993C /* KWDocumentManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWDocumentManager.h; sourceTree = "<group>"; };
@@ -450,8 +448,7 @@
 		82CE926418A31D660070993C /* TahoeSDKTests */ = {
 			isa = PBXGroup;
 			children = (
-				82CE926818A31D660070993C /* TahoeSDKTests.m */,
-				236B4CF518ADAC5F00840B9C /* KWMessageClientTest.m */,
+				236B4CF518ADAC5F00840B9C /* KWMessageClientTests.m */,
 				82CE926C18A31D780070993C /* Supporting Files */,
 			);
 			path = TahoeSDKTests;
@@ -747,7 +744,6 @@
 				823B15CB18A55CC700AF3EEC /* KWPipeline.m in Sources */,
 				82FC22BF18A5B5DD00D9B775 /* KWMessageClient.m in Sources */,
 				828AC0CF18AEA6BD000E0C19 /* KWMessage.m in Sources */,
-				82CE926B18A31D660070993C /* TahoeSDKTests.m in Sources */,
 				82FC22A018A56D2600D9B775 /* KWQuestionMapperWorker.m in Sources */,
 				82FC22B218A593C600D9B775 /* KWChannelService.m in Sources */,
 				823B163118A55CC700AF3EEC /* KWMapperRegistry.m in Sources */,
@@ -758,6 +754,7 @@
 				823B15C218A55CC700AF3EEC /* KWBaseAuthClient.m in Sources */,
 				823B163718A55CC700AF3EEC /* KWMixedMapperWorker.m in Sources */,
 				823B166118A55CC700AF3EEC /* KWMergerWorker.m in Sources */,
+				238E995418AEDA4E00D9C7A4 /* KWMessageClientTests.m in Sources */,
 				82FC22BA18A5B54700D9B775 /* KWNetworkActivityIndicator.m in Sources */,
 				823B165818A55CC700AF3EEC /* KWBasicMergerWorker.m in Sources */,
 				8295E36A18A565A70054C1B7 /* NSDictionary+URLQueryString.m in Sources */,
