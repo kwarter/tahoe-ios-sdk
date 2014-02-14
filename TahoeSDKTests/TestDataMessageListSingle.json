@@ -1,0 +1,22 @@
+{
+    "messages": [
+        {
+            "id": "45985ed0-cf4d-48e4-885d-f8fe99c0d8a1",
+            "type": "trivia",
+            "data": {
+                "title": "This is a title",
+                "choices": [
+                    "Choice A",
+                    "Choice B",
+                    "Choice C",
+                    "Choice D"
+                ]
+            },
+            "links": {
+                "self": "https://cdn.uk.example.com/channels/033f7d26-ba04-497d-9443-0effdb3ab8be/messages/45985ed0-cf4d-48e4-885d-f8fe99c0d8a1",
+                "channel": "https://example.com/channels/033f7d26-ba04-497d-9443-0effdb3ab8be/",
+                "replies": "https://cdn.uk.example.com/channels/033f7d26-ba04-497d-9443-0effdb3ab8be/messages/45985ed0-cf4d-48e4-885d-f8fe99c0d8a1/replies"
+            }
+        }
+    ]
+}

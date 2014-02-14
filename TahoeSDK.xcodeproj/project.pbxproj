@@ -32,6 +32,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+                23CB2C9A18AD5675008D5D99 /* TestDataMessageListSingle.json in Resources */ = {isa = PBXBuildFile; fileRef = 23CB2C9918AD5675008D5D99 /* TestDataMessageListSingle.json */; };
 		823B15C018A55CC700AF3EEC /* KWBaseAuthClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 823B154018A55CC600AF3EEC /* KWBaseAuthClient.h */; };
 		823B15C118A55CC700AF3EEC /* KWBaseAuthClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 823B154118A55CC600AF3EEC /* KWBaseAuthClient.m */; };
 		823B15C218A55CC700AF3EEC /* KWBaseAuthClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 823B154118A55CC600AF3EEC /* KWBaseAuthClient.m */; };
@@ -97,7 +98,7 @@
 		8295E37418A567420054C1B7 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295E37218A567420054C1B7 /* NSString+URLEncoding.m */; };
 		8295E37518A567420054C1B7 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295E37218A567420054C1B7 /* NSString+URLEncoding.m */; };
 		82BAF80718233B2E00F8BB35 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 82BAF80618233B2E00F8BB35 /* libz.dylib */; };
-		82C7B22218A44781003C4903 /* KWQuestionClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C7B22118A44781003C4903 /* KWQuestionClientTests.m */; };
+                82C7B22218A44781003C4903 /* KWChannelServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C7B22118A44781003C4903 /* KWChannelServiceTests.m */; };
 		82CE925F18A31D3E0070993C /* TahoeSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 82CE925C18A31D3E0070993C /* TahoeSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		82CE926318A31D5A0070993C /* TahoeSDK-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 82CE926218A31D5A0070993C /* TahoeSDK-Prefix.pch */; };
 		82CE926918A31D660070993C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 82CE926518A31D660070993C /* InfoPlist.strings */; };
@@ -141,6 +142,7 @@
 		82FC22C618A5BC8700D9B775 /* KWMessageService.m in Sources */ = {isa = PBXBuildFile; fileRef = 82FC22C418A5BC8700D9B775 /* KWMessageService.m */; };
 		82FC22C718A5BC8700D9B775 /* KWMessageService.m in Sources */ = {isa = PBXBuildFile; fileRef = 82FC22C418A5BC8700D9B775 /* KWMessageService.m */; };
 		9CC955667B88484DBCAFB96A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81A82B59DB9443D19741769B /* libPods.a */; };
+                DC00069D64384F23982A3868 /* libPods-TahoeSDKTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F7D00858EA8647B99ABD6D99 /* libPods-TahoeSDKTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -155,6 +157,8 @@
 
 /* Begin PBXFileReference section */
 		00D99C45C62840BC87755B6E /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+                23CB2C9918AD5675008D5D99 /* TestDataMessageListSingle.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TestDataMessageListSingle.json; sourceTree = "<group>"; };
+                69ED2733DF4D49688521BD7B /* Pods-TahoeSDKTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TahoeSDKTests.xcconfig"; path = "Pods/Pods-TahoeSDKTests.xcconfig"; sourceTree = "<group>"; };
 		81A82B59DB9443D19741769B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8205E34D168BA9BB00275822 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		8205E393168BB0E500275822 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -206,7 +210,7 @@
 		82A5C28916447A750056B3D5 /* TahoeSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TahoeSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		82BAF80618233B2E00F8BB35 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		82C7B22018A4472D003C4903 /* TahoeSDKTests-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TahoeSDKTests-Prefix.pch"; sourceTree = "<group>"; };
-		82C7B22118A44781003C4903 /* KWQuestionClientTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWQuestionClientTests.m; sourceTree = "<group>"; };
+                82C7B22118A44781003C4903 /* KWChannelServiceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWChannelServiceTests.m; sourceTree = "<group>"; };
 		82CCA2581644814600624487 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		82CCA25A1644814C00624487 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		82CE925C18A31D3E0070993C /* TahoeSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TahoeSDK.h; sourceTree = "<group>"; };
@@ -242,6 +246,7 @@
 		82FC22C318A5BC8700D9B775 /* KWMessageService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWMessageService.h; sourceTree = "<group>"; };
 		82FC22C418A5BC8700D9B775 /* KWMessageService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWMessageService.m; sourceTree = "<group>"; };
 		F6B527E816B6FFC400335320 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+                F7D00858EA8647B99ABD6D99 /* libPods-TahoeSDKTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TahoeSDKTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -253,6 +258,7 @@
 				8246D271176A2B7E00D770D3 /* UIKit.framework in Frameworks */,
 				8246D270176A2B7E00D770D3 /* Foundation.framework in Frameworks */,
 				82BAF80718233B2E00F8BB35 /* libz.dylib in Frameworks */,
+                                DC00069D64384F23982A3868 /* libPods-TahoeSDKTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,6 +385,7 @@
 				8280BE2E16446D86007C09DA /* Frameworks */,
 				8280BE2D16446D86007C09DA /* Products */,
 				00D99C45C62840BC87755B6E /* Pods.xcconfig */,
+                                69ED2733DF4D49688521BD7B /* Pods-TahoeSDKTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 			tabWidth = 4;
@@ -407,6 +414,7 @@
 				8246D258176A2B7000D770D3 /* XCTest.framework */,
 				82BAF80618233B2E00F8BB35 /* libz.dylib */,
 				81A82B59DB9443D19741769B /* libPods.a */,
+                                F7D00858EA8647B99ABD6D99 /* libPods-TahoeSDKTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -438,7 +446,7 @@
 			isa = PBXGroup;
 			children = (
 				82CE926818A31D660070993C /* TahoeSDKTests.m */,
-				82C7B22118A44781003C4903 /* KWQuestionClientTests.m */,
+                                82C7B22118A44781003C4903 /* KWChannelServiceTests.m */,
 				82CE926C18A31D780070993C /* Supporting Files */,
 			);
 			path = TahoeSDKTests;
@@ -450,6 +458,7 @@
 				82CE926518A31D660070993C /* InfoPlist.strings */,
 				82C7B22018A4472D003C4903 /* TahoeSDKTests-Prefix.pch */,
 				82CE926718A31D660070993C /* TahoeSDKTests-Info.plist */,
+                                23CB2C9918AD5675008D5D99 /* TestDataMessageListSingle.json */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -544,9 +553,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8246D27D176A2B7E00D770D3 /* Build configuration list for PBXNativeTarget "TahoeSDKTests" */;
 			buildPhases = (
+                                C00FB42FB4B74BFE8BE5BE53 /* Check Pods Manifest.lock */,
 				8246D26A176A2B7E00D770D3 /* Sources */,
 				8246D26B176A2B7E00D770D3 /* Frameworks */,
 				8246D26C176A2B7E00D770D3 /* Resources */,
+                                25D1E856C7E44243ACA825CB /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -618,6 +629,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				82CE926918A31D660070993C /* InfoPlist.strings in Resources */,
+                                23CB2C9A18AD5675008D5D99 /* TestDataMessageListSingle.json in Resources */,
 				82CE926A18A31D660070993C /* TahoeSDKTests-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -625,6 +637,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+                25D1E856C7E44243ACA825CB /* Copy Pods Resources */ = {
+                        isa = PBXShellScriptBuildPhase;
+                        buildActionMask = 2147483647;
+                        files = (
+                        );
+                        inputPaths = (
+                        );
+                        name = "Copy Pods Resources";
+                        outputPaths = (
+                        );
+                        runOnlyForDeploymentPostprocessing = 0;
+                        shellPath = /bin/sh;
+                        shellScript = "\"${SRCROOT}/Pods/Pods-TahoeSDKTests-resources.sh\"\n";
+                        showEnvVarsInLog = 0;
+                };
 		77A18A30421342FE9A1D13DE /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -667,6 +694,21 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nNAME=KwarterSDK\nFRAMEWORK=\"${NAME}.framework\"\nBUILD_TYPE=Release\nVERSION=`/usr/libexec/PlistBuddy -c \"Print CFBundleShortVersionString\" \"${NAME}/${NAME}-Info.plist\"`\n\nTARGET_DIR=\"${PROJECT_DIR}/Build\"\n\necho \"Cleaning target\"\n[ -d \"${TARGET_DIR}\" ] && rm -rf $TARGET_DIR\nmkdir -p $TARGET_DIR\n\n# Build framework the for Simulator and iOS\necho \"Build\"\nxcodebuild -project \"${NAME}.xcodeproj\" -scheme \"${NAME}\" -sdk \"iphonesimulator\" -configuration \"${BUILD_TYPE}\"\nxcodebuild -project \"${NAME}.xcodeproj\" -scheme \"${NAME}\" -sdk \"iphoneos\" -configuration \"${BUILD_TYPE}\"\n\n# Copy Framework and remove library\ncp -r \"${BUILD_DIR}/${BUILD_TYPE}-iphoneos/${FRAMEWORK}\" $TARGET_DIR\nrm \"${TARGET_DIR}/${FRAMEWORK}/${NAME}\"\n\nARCHIVE_DIR=\"${TARGET_DIR}/${FRAMEWORK}\"\n\n# Generate universal library\nxcrun -sdk iphoneos lipo -output \"${ARCHIVE_DIR}/${NAME}\" -create \"${BUILD_DIR}/${BUILD_TYPE}-iphoneos/${FRAMEWORK}/${NAME}\" \"${BUILD_DIR}/${BUILD_TYPE}-iphonesimulator/${FRAMEWORK}/${NAME}\"\n\n# Rename Core Data model file\nmv \"${ARCHIVE_DIR}/KwarterModel.momd/KwarterModel.mom\" \"${ARCHIVE_DIR}/KwarterModel.mom\"\nrm -rf \"${ARCHIVE_DIR}/KwarterModel.momd\"\nmv \"${ARCHIVE_DIR}/KwarterModel.mom\" \"${ARCHIVE_DIR}/KwarterModel.momd\"\n\n# Copy SDK resources\ncp -r \"${SRCROOT}/${NAME}/DefaultEnvironments.bundle\" \"${ARCHIVE_DIR}/DefaultEnvironments.bundle\"\ncp -r \"${SRCROOT}/${NAME}/${NAME}.bundle\" \"${ARCHIVE_DIR}/${NAME}.bundle\"\n\ntar -czf \"${NAME}-${VERSION}.tgz\" -C $TARGET_DIR $FRAMEWORK\nmv \"${NAME}-${VERSION}.tgz\" \"${TARGET_DIR}/${NAME}-${VERSION}.tgz\"";
 		};
+                C00FB42FB4B74BFE8BE5BE53 /* Check Pods Manifest.lock */ = {
+                        isa = PBXShellScriptBuildPhase;
+                        buildActionMask = 2147483647;
+                        files = (
+                        );
+                        inputPaths = (
+                        );
+                        name = "Check Pods Manifest.lock";
+                        outputPaths = (
+                        );
+                        runOnlyForDeploymentPostprocessing = 0;
+                        shellPath = /bin/sh;
+                        shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+                        showEnvVarsInLog = 0;
+                };
 		D0A7365272CB4C1A965F9425 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -719,7 +761,7 @@
 				823B165E18A55CC700AF3EEC /* KWMerger.m in Sources */,
 				823B15CE18A55CC700AF3EEC /* KWPipelineObject.m in Sources */,
 				823B163D18A55CC700AF3EEC /* KWPassThroughMapperWorker.m in Sources */,
-				82C7B22218A44781003C4903 /* KWQuestionClientTests.m in Sources */,
+                                82C7B22218A44781003C4903 /* KWChannelServiceTests.m in Sources */,
 				82CE928118A322EE0070993C /* KWDocumentManager.m in Sources */,
 				823B15C818A55CC700AF3EEC /* KWFetcher.m in Sources */,
 				82FC22C718A5BC8700D9B775 /* KWMessageService.m in Sources */,
@@ -789,7 +831,7 @@
 /* Begin XCBuildConfiguration section */
 		8246D27E176A2B7E00D770D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 00D99C45C62840BC87755B6E /* Pods.xcconfig */;
+                        baseConfigurationReference = 69ED2733DF4D49688521BD7B /* Pods-TahoeSDKTests.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_MODULES = YES;
@@ -847,7 +889,7 @@
 		};
 		8246D27F176A2B7E00D770D3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 00D99C45C62840BC87755B6E /* Pods.xcconfig */;
+                        baseConfigurationReference = 69ED2733DF4D49688521BD7B /* Pods-TahoeSDKTests.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_MODULES = YES;

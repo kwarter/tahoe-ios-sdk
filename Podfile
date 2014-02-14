@@ -5,3 +5,7 @@ set_arc_compatibility_flag!
 
 pod 'AFNetworking', '~> 1.3'
 pod 'SSToolkit', '~> 1.0'
+
+target :TahoeSDKTests do
+    pod 'OCMock', '~>2.2'
+end
