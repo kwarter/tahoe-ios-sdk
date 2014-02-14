@@ -52,7 +52,7 @@
     [[KWBaseAuthClient sharedClient] enqueueHTTPRequestOperation:operation];
 }
 
-- (void)answerQuestion:(KWQuestion *)question withReply:(NSString *)reply completion:(void (^)(NSError *))block {
+- (void)answerQuestion:(KWQuestion *)question reply:(NSString *)reply data:(NSDictionary *)data completion:(void (^)(NSError *))block {
     
     // Validate params
     if (!question) {
@@ -73,9 +73,11 @@
     }
     
     
-    NSDictionary *params = @{
-        @"choice": reply
-    };
+    NSMutableDictionary *mutableParams = [NSMutableDictionary dictionaryWithObject:reply forKey:@"choice"];
+    if (data) {
+        [mutableParams setValue:data forKey:@"data"];
+    }
+    NSDictionary *params = [NSDictionary dictionaryWithDictionary:mutableParams];
     
     NSString *path = [NSString stringWithFormat:@"/channels/%@/messages/%@/replies/", question.channel.identifier, question.identifier];
     
@@ -91,6 +93,36 @@
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         if (block) {
             block(error);
+        }
+    }];
+}
+
+- (void)getRepliesForQuestion:(KWQuestion *)question completion:(void(^)(NSArray *replies, NSError *error))block {
+    
+    // Validate params
+    if (!question) {
+        if (block) {
+            NSDictionary *userInfo = @{KWClientErrorMissingParameterKey: @"question"};
+            NSError *paramsError = [NSError errorWithDomain:KWClientErrorDomain code:KWClientErrorMissingParameterError userInfo:userInfo];
+            block(nil, paramsError);
+        }
+        return;
+    }
+    
+    
+    NSString *path = [NSString stringWithFormat:@"/replies/%@", question.identifier];
+    
+    [[KWBaseAuthClient sharedClient] postPath:path parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        
+        //TODO: xxx
+        NSArray *replies;
+        
+        if (block) {
+            block(replies, nil);
+        }
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        if (block) {
+            block(nil, error);
         }
     }];
 }

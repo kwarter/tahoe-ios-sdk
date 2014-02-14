@@ -14,6 +14,8 @@
 
 - (void)getMessagesForChannelIdentifier:(NSString *)identifier since:(NSDate *)timestamp limit:(NSUInteger)count completion:(void(^)(NSArray *messages, NSError *error))block;
 
-- (void)answerQuestion:(KWQuestion *)question withReply:(NSString *)reply completion:(void(^)(NSError *error))block;
+- (void)answerQuestion:(KWQuestion *)question reply:(NSString *)reply data:(NSDictionary *)data completion:(void(^)(NSError *error))block;
+
+- (void)getRepliesForQuestion:(KWQuestion *)question completion:(void(^)(NSArray *replies, NSError *error))block;
 
 @end
