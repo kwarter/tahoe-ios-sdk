@@ -32,6 +32,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+                236B4CF618ADAC5F00840B9C /* KWMessageClientTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 236B4CF518ADAC5F00840B9C /* KWMessageClientTest.m */; };
                 23CB2C9A18AD5675008D5D99 /* TestDataMessageListSingle.json in Resources */ = {isa = PBXBuildFile; fileRef = 23CB2C9918AD5675008D5D99 /* TestDataMessageListSingle.json */; };
 		823B15C018A55CC700AF3EEC /* KWBaseAuthClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 823B154018A55CC600AF3EEC /* KWBaseAuthClient.h */; };
 		823B15C118A55CC700AF3EEC /* KWBaseAuthClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 823B154118A55CC600AF3EEC /* KWBaseAuthClient.m */; };
@@ -98,7 +99,6 @@
 		8295E37418A567420054C1B7 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295E37218A567420054C1B7 /* NSString+URLEncoding.m */; };
 		8295E37518A567420054C1B7 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295E37218A567420054C1B7 /* NSString+URLEncoding.m */; };
 		82BAF80718233B2E00F8BB35 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 82BAF80618233B2E00F8BB35 /* libz.dylib */; };
-                82C7B22218A44781003C4903 /* KWChannelServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C7B22118A44781003C4903 /* KWChannelServiceTests.m */; };
 		82CE925F18A31D3E0070993C /* TahoeSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 82CE925C18A31D3E0070993C /* TahoeSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		82CE926318A31D5A0070993C /* TahoeSDK-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 82CE926218A31D5A0070993C /* TahoeSDK-Prefix.pch */; };
 		82CE926918A31D660070993C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 82CE926518A31D660070993C /* InfoPlist.strings */; };
@@ -157,6 +157,7 @@
 
 /* Begin PBXFileReference section */
 		00D99C45C62840BC87755B6E /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+                236B4CF518ADAC5F00840B9C /* KWMessageClientTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWMessageClientTest.m; sourceTree = "<group>"; };
                 23CB2C9918AD5675008D5D99 /* TestDataMessageListSingle.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TestDataMessageListSingle.json; sourceTree = "<group>"; };
                 69ED2733DF4D49688521BD7B /* Pods-TahoeSDKTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TahoeSDKTests.xcconfig"; path = "Pods/Pods-TahoeSDKTests.xcconfig"; sourceTree = "<group>"; };
 		81A82B59DB9443D19741769B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -210,7 +211,6 @@
 		82A5C28916447A750056B3D5 /* TahoeSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TahoeSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		82BAF80618233B2E00F8BB35 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		82C7B22018A4472D003C4903 /* TahoeSDKTests-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TahoeSDKTests-Prefix.pch"; sourceTree = "<group>"; };
-                82C7B22118A44781003C4903 /* KWChannelServiceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWChannelServiceTests.m; sourceTree = "<group>"; };
 		82CCA2581644814600624487 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		82CCA25A1644814C00624487 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		82CE925C18A31D3E0070993C /* TahoeSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TahoeSDK.h; sourceTree = "<group>"; };
@@ -446,8 +446,8 @@
 			isa = PBXGroup;
 			children = (
 				82CE926818A31D660070993C /* TahoeSDKTests.m */,
-                                82C7B22118A44781003C4903 /* KWChannelServiceTests.m */,
 				82CE926C18A31D780070993C /* Supporting Files */,
+                                236B4CF518ADAC5F00840B9C /* KWMessageClientTest.m */,
 			);
 			path = TahoeSDKTests;
 			sourceTree = "<group>";
@@ -745,6 +745,7 @@
 				823B15C518A55CC700AF3EEC /* KWBaseCoreDataClient.m in Sources */,
 				8295E36218A564560054C1B7 /* KWCredentialManager.m in Sources */,
 				82FC229018A56C0E00D9B775 /* KWMessage.m in Sources */,
+                                236B4CF618ADAC5F00840B9C /* KWMessageClientTest.m in Sources */,
 				82FC229518A56C0F00D9B775 /* KWChannel.m in Sources */,
 				8295E37518A567420054C1B7 /* NSString+URLEncoding.m in Sources */,
 				82FC229A18A56C0F00D9B775 /* KWQuestion.m in Sources */,
@@ -761,7 +762,6 @@
 				823B165E18A55CC700AF3EEC /* KWMerger.m in Sources */,
 				823B15CE18A55CC700AF3EEC /* KWPipelineObject.m in Sources */,
 				823B163D18A55CC700AF3EEC /* KWPassThroughMapperWorker.m in Sources */,
-                                82C7B22218A44781003C4903 /* KWChannelServiceTests.m in Sources */,
 				82CE928118A322EE0070993C /* KWDocumentManager.m in Sources */,
 				823B15C818A55CC700AF3EEC /* KWFetcher.m in Sources */,
 				82FC22C718A5BC8700D9B775 /* KWMessageService.m in Sources */,
