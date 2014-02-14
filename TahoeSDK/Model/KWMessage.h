@@ -14,6 +14,7 @@
 @interface KWMessage : NSManagedObject
 
 @property (nonatomic, strong) NSString *identifier;
+@property (nonatomic, strong) NSString *title;
 @property (nonatomic, strong) NSDate *timestamp;
 @property (nonatomic, strong) KWChannel *channel;
 @property (nonatomic, strong) NSOrderedSet *replyOrderedSet;

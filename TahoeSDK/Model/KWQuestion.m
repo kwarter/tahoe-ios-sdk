@@ -11,6 +11,5 @@
 @implementation KWQuestion
 
 @dynamic choices;
-@dynamic title;
 
 @end

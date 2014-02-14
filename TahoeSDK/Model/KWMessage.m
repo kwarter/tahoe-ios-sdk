@@ -13,6 +13,7 @@
 @implementation KWMessage
 
 @dynamic identifier;
+@dynamic title;
 @dynamic timestamp;
 @dynamic channel;
 @dynamic replyOrderedSet;

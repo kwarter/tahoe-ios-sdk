@@ -13,6 +13,5 @@
 @interface KWQuestion : KWMessage
 
 @property (nonatomic, strong) NSArray *choices;
-@property (nonatomic, strong) NSString *title;
 
 @end
