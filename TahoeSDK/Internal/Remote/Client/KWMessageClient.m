@@ -73,8 +73,10 @@
     }
     
     
-    NSString *replyIdentifier = @""; //TODO: xxx
+    // Generate an UUID for the reply
+    NSString *replyIdentifier = [[NSUUID UUID] UUIDString];
     
+    // Build the parameters
     NSMutableDictionary *mutableParams = [NSMutableDictionary dictionaryWithObject:reply forKey:@"choice"];
     if (data) {
         [mutableParams setValue:data forKey:@"data"];
@@ -82,7 +84,6 @@
     NSDictionary *params = [NSDictionary dictionaryWithDictionary:mutableParams];
     
     NSString *path = [NSString stringWithFormat:@"/channels/%@/messages/%@/replies/%@", question.channel.identifier, question.identifier, replyIdentifier];
-    
     [[KWBaseAuthClient sharedClient] postPath:path parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
         
         NSArray *replies = @[
