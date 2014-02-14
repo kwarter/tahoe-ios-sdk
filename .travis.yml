@@ -11,5 +11,7 @@ xcode_workspace: TahoeSDK.xcworkspace
 
 xcode_scheme: "Tahoe SDK"
 
+xcode_sdk: iphonesimulator
+
 notifications:
   hipchat: 6582a749bc5e528b65566735b2d0f3@Tahoe
