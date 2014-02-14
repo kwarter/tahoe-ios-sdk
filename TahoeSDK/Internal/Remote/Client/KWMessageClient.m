@@ -77,7 +77,7 @@
     NSString *replyIdentifier = [[NSUUID UUID] UUIDString];
     
     // Build the parameters
-    NSMutableDictionary *mutableParams = [NSMutableDictionary dictionaryWithObject:reply forKey:@"choice"];
+    NSMutableDictionary *mutableParams = [NSMutableDictionary dictionaryWithObject:reply forKey:@"reply"];
     if (data) {
         [mutableParams setValue:data forKey:@"data"];
     }
