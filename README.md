@@ -1,7 +1,7 @@
 tahoe-ios-sdk
 =============
 
-Tahoe iOS SDK
+[![Build Status](https://magnum.travis-ci.com/kwarter/tahoe-ios-sdk.png?token=q7nssFpLij7iRs7yZdsz&branch=master)](https://magnum.travis-ci.com/kwarter/tahoe-ios-sdk)
 
 Install
 -------
