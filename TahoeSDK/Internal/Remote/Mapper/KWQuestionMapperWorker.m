@@ -43,8 +43,8 @@
         [fields setValue:[resourceFields valueForKey:@"title"] forKey:@"title"];
     }
     
-    if ([resourceFields valueForKey:@"choices"]) {
-        [fields setValue:[resourceFields valueForKey:@"choices"] forKey:@"choices"];
+    if ([resourceFields valueForKeyPath:@"data.choices"]) {
+        [fields setValue:[resourceFields valueForKeyPath:@"data.choices"] forKey:@"choices"];
     }
     
     mappedResource.fields = [NSDictionary dictionaryWithDictionary:fields];

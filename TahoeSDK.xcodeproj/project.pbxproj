@@ -451,8 +451,8 @@
 			isa = PBXGroup;
 			children = (
 				82CE926818A31D660070993C /* TahoeSDKTests.m */,
-				82CE926C18A31D780070993C /* Supporting Files */,
 				236B4CF518ADAC5F00840B9C /* KWMessageClientTest.m */,
+				82CE926C18A31D780070993C /* Supporting Files */,
 			);
 			path = TahoeSDKTests;
 			sourceTree = "<group>";
@@ -754,7 +754,6 @@
 				823B162D18A55CC700AF3EEC /* KWMapper.m in Sources */,
 				823B15C518A55CC700AF3EEC /* KWBaseCoreDataClient.m in Sources */,
 				8295E36218A564560054C1B7 /* KWCredentialManager.m in Sources */,
-				236B4CF618ADAC5F00840B9C /* KWMessageClientTest.m in Sources */,
 				8295E37518A567420054C1B7 /* NSString+URLEncoding.m in Sources */,
 				823B15C218A55CC700AF3EEC /* KWBaseAuthClient.m in Sources */,
 				823B163718A55CC700AF3EEC /* KWMixedMapperWorker.m in Sources */,
