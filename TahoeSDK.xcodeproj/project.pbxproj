@@ -120,6 +120,9 @@
 		82CE927F18A322EE0070993C /* KWDocumentManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 82CE927D18A322EE0070993C /* KWDocumentManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		82CE928018A322EE0070993C /* KWDocumentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 82CE927E18A322EE0070993C /* KWDocumentManager.m */; };
 		82CE928118A322EE0070993C /* KWDocumentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 82CE927E18A322EE0070993C /* KWDocumentManager.m */; };
+		82FA4FE118AEE4CA0096F5C4 /* KWReplyMapperWorker.h in Headers */ = {isa = PBXBuildFile; fileRef = 82FA4FDF18AEE4CA0096F5C4 /* KWReplyMapperWorker.h */; };
+		82FA4FE218AEE4CA0096F5C4 /* KWReplyMapperWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = 82FA4FE018AEE4CA0096F5C4 /* KWReplyMapperWorker.m */; };
+		82FA4FE318AEE4CA0096F5C4 /* KWReplyMapperWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = 82FA4FE018AEE4CA0096F5C4 /* KWReplyMapperWorker.m */; };
 		82FC229E18A56D2600D9B775 /* KWQuestionMapperWorker.h in Headers */ = {isa = PBXBuildFile; fileRef = 82FC229C18A56D2600D9B775 /* KWQuestionMapperWorker.h */; };
 		82FC229F18A56D2600D9B775 /* KWQuestionMapperWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = 82FC229D18A56D2600D9B775 /* KWQuestionMapperWorker.m */; };
 		82FC22A018A56D2600D9B775 /* KWQuestionMapperWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = 82FC229D18A56D2600D9B775 /* KWQuestionMapperWorker.m */; };
@@ -232,6 +235,8 @@
 		82CE927D18A322EE0070993C /* KWDocumentManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWDocumentManager.h; sourceTree = "<group>"; };
 		82CE927E18A322EE0070993C /* KWDocumentManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWDocumentManager.m; sourceTree = "<group>"; };
 		82EB8DA3171671F000F3A80F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		82FA4FDF18AEE4CA0096F5C4 /* KWReplyMapperWorker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWReplyMapperWorker.h; sourceTree = "<group>"; };
+		82FA4FE018AEE4CA0096F5C4 /* KWReplyMapperWorker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWReplyMapperWorker.m; sourceTree = "<group>"; };
 		82FC229C18A56D2600D9B775 /* KWQuestionMapperWorker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWQuestionMapperWorker.h; sourceTree = "<group>"; };
 		82FC229D18A56D2600D9B775 /* KWQuestionMapperWorker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWQuestionMapperWorker.m; sourceTree = "<group>"; };
 		82FC22A118A56D7C00D9B775 /* KWMessageMapperWorker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWMessageMapperWorker.h; sourceTree = "<group>"; };
@@ -348,6 +353,8 @@
 				82FC22A218A56D7C00D9B775 /* KWMessageMapperWorker.m */,
 				82FC229C18A56D2600D9B775 /* KWQuestionMapperWorker.h */,
 				82FC229D18A56D2600D9B775 /* KWQuestionMapperWorker.m */,
+				82FA4FDF18AEE4CA0096F5C4 /* KWReplyMapperWorker.h */,
+				82FA4FE018AEE4CA0096F5C4 /* KWReplyMapperWorker.m */,
 			);
 			path = Mapper;
 			sourceTree = "<group>";
@@ -535,6 +542,7 @@
 				823B163518A55CC700AF3EEC /* KWMixedMapperWorker.h in Headers */,
 				82FC22A318A56D7C00D9B775 /* KWMessageMapperWorker.h in Headers */,
 				82FC22AA18A56DB800D9B775 /* KWChannelMapperWorker.h in Headers */,
+				82FA4FE118AEE4CA0096F5C4 /* KWReplyMapperWorker.h in Headers */,
 				823B15CF18A55CC700AF3EEC /* KWPipelineStage.h in Headers */,
 				823B162F18A55CC700AF3EEC /* KWMapperRegistry.h in Headers */,
 				823B15C618A55CC700AF3EEC /* KWFetcher.h in Headers */,
@@ -739,6 +747,7 @@
 				823B165B18A55CC700AF3EEC /* KWManagedObjectCache.m in Sources */,
 				828AC0C518AEA6BC000E0C19 /* KWChannel.m in Sources */,
 				823B167318A5601400AF3EEC /* NSObject+Registration.m in Sources */,
+				82FA4FE318AEE4CA0096F5C4 /* KWReplyMapperWorker.m in Sources */,
 				823B162A18A55CC700AF3EEC /* KWMappedResource.m in Sources */,
 				82CE927618A321D80070993C /* TahoeModel.xcdatamodeld in Sources */,
 				823B15CB18A55CC700AF3EEC /* KWPipeline.m in Sources */,
@@ -804,6 +813,7 @@
 				823B163618A55CC700AF3EEC /* KWMixedMapperWorker.m in Sources */,
 				823B163318A55CC700AF3EEC /* KWMapperWorker.m in Sources */,
 				823B15CD18A55CC700AF3EEC /* KWPipelineObject.m in Sources */,
+				82FA4FE218AEE4CA0096F5C4 /* KWReplyMapperWorker.m in Sources */,
 				823B15CA18A55CC700AF3EEC /* KWPipeline.m in Sources */,
 				82FC22B118A593C600D9B775 /* KWChannelService.m in Sources */,
 				828AC0D318AEA6BD000E0C19 /* KWReply.m in Sources */,
