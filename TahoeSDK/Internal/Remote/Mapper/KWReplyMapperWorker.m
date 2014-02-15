@@ -35,13 +35,25 @@
         [fields setValue:[NSDate dateFromISO8601String:[resourceFields valueForKey:@"timestamp"]] forKey:@"timestamp"];
     }
     
-    if ([resourceFields valueForKey:@"title"]) {
-        [fields setValue:[resourceFields valueForKey:@"title"] forKey:@"title"];
+    if ([resourceFields valueForKey:@"reply"]) {
+        [fields setValue:[resourceFields valueForKey:@"reply"] forKey:@"title"];
     }
     
-    NSLog(@">>>> %@", resourceFields);
+    if ([resourceFields valueForKey:@"data"]) {
+        [fields setValue:[resourceFields valueForKey:@"data"] forKey:@"data"];
+    }
     
     mappedResource.fields = [NSDictionary dictionaryWithDictionary:fields];
+    
+    NSMutableDictionary *relations = [NSMutableDictionary dictionary];
+    
+    NSString *messageIdentifier = [resourceFields objectForKey:@"message_id"];
+    if (messageIdentifier) {
+        KWMappedResource *messageMappedResource = [KWMapperWorker emptyResourceForEntity:@"Message" withIdentifier:messageIdentifier];
+        [relations setValue:messageMappedResource forKey:@"message"];
+    }
+    
+    mappedResource.relations = [NSDictionary dictionaryWithDictionary:relations];
     
     return mappedResource;
 }

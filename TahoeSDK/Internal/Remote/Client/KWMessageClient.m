@@ -128,13 +128,13 @@
     }
     
     
-    NSString *path = [NSString stringWithFormat:@"/replies/%@", question.identifier];
+    NSString *path = [NSString stringWithFormat:@"/channels/%@/messages/%@/replies/", question.channel.identifier, question.identifier];
     
-    [[KWBaseAuthClient sharedClient] postPath:path parameters:nil success:^(AFHTTPRequestOperation *operation, NSArray *result) {
+    [[KWBaseAuthClient sharedClient] getPath:path parameters:nil success:^(AFHTTPRequestOperation *operation, NSArray *result) {
         NSArray *replies = [result valueForKey:@"replies"];
         
         KWBaseCoreDataClient *client = [[KWBaseCoreDataClient alloc] init];
-        [client objectsFromJSON:replies modelName:@"Replies" completionBlock:^(NSArray *result, NSError *error) {
+        [client objectsFromJSON:replies modelName:@"Reply" completionBlock:^(NSArray *result, NSError *error) {
             if (block) {
                 block(result, nil);
             }
