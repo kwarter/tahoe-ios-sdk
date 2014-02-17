@@ -34,6 +34,7 @@
 /* Begin PBXBuildFile section */
                 2350FAF618AEE5A7003C5E55 /* TestDataMessageListMany.json in Resources */ = {isa = PBXBuildFile; fileRef = 2350FAF518AEE5A7003C5E55 /* TestDataMessageListMany.json */; };
 		238E995418AEDA4E00D9C7A4 /* KWMessageClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 236B4CF518ADAC5F00840B9C /* KWMessageClientTests.m */; };
+                23B28CDB18B2973F005FFD54 /* KWMessageServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 23B28CDA18B2973F005FFD54 /* KWMessageServiceTests.m */; };
 		23CB2C9A18AD5675008D5D99 /* TestDataMessageListSingle.json in Resources */ = {isa = PBXBuildFile; fileRef = 23CB2C9918AD5675008D5D99 /* TestDataMessageListSingle.json */; };
 		823B15C018A55CC700AF3EEC /* KWBaseAuthClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 823B154018A55CC600AF3EEC /* KWBaseAuthClient.h */; };
 		823B15C118A55CC700AF3EEC /* KWBaseAuthClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 823B154118A55CC600AF3EEC /* KWBaseAuthClient.m */; };
@@ -165,6 +166,7 @@
 		00D99C45C62840BC87755B6E /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
                 2350FAF518AEE5A7003C5E55 /* TestDataMessageListMany.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TestDataMessageListMany.json; sourceTree = "<group>"; };
 		236B4CF518ADAC5F00840B9C /* KWMessageClientTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWMessageClientTests.m; sourceTree = "<group>"; };
+                23B28CDA18B2973F005FFD54 /* KWMessageServiceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWMessageServiceTests.m; sourceTree = "<group>"; };
 		23CB2C9918AD5675008D5D99 /* TestDataMessageListSingle.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TestDataMessageListSingle.json; sourceTree = "<group>"; };
 		69ED2733DF4D49688521BD7B /* Pods-TahoeSDKTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TahoeSDKTests.xcconfig"; path = "Pods/Pods-TahoeSDKTests.xcconfig"; sourceTree = "<group>"; };
 		81A82B59DB9443D19741769B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -458,6 +460,7 @@
 			isa = PBXGroup;
 			children = (
 				236B4CF518ADAC5F00840B9C /* KWMessageClientTests.m */,
+                                23B28CDA18B2973F005FFD54 /* KWMessageServiceTests.m */,
 				82CE926C18A31D780070993C /* Supporting Files */,
 			);
 			path = TahoeSDKTests;
@@ -777,6 +780,7 @@
 				82FC22A518A56D7C00D9B775 /* KWMessageMapperWorker.m in Sources */,
 				823B165E18A55CC700AF3EEC /* KWMerger.m in Sources */,
 				823B15CE18A55CC700AF3EEC /* KWPipelineObject.m in Sources */,
+                                23B28CDB18B2973F005FFD54 /* KWMessageServiceTests.m in Sources */,
 				823B163D18A55CC700AF3EEC /* KWPassThroughMapperWorker.m in Sources */,
 				828AC0CA18AEA6BD000E0C19 /* KWQuestion.m in Sources */,
 				82CE928118A322EE0070993C /* KWDocumentManager.m in Sources */,

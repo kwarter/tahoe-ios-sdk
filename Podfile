@@ -7,5 +7,6 @@ pod 'AFNetworking', '~> 1.3'
 pod 'SSToolkit', '~> 1.0'
 
 target :TahoeSDKTests do
-    pod 'OHHTTPStubs', '~>2.3.0'
+    pod 'Kiwi/XCTest', '~>2.2'
+    pod 'OHHTTPStubs', '~>2.3'
 end

@@ -59,6 +59,7 @@
         //Message attributes
         XCTAssertTrue([[messageJson objectForKey:@"id"] isEqualToString:message.identifier]);
         XCTAssertTrue([[messageJson objectForKey:@"title"] isEqualToString:message.title]);
+        //TODO add check for the timestamp
         
         //Question attributes
         XCTAssertTrue([message isKindOfClass:[KWQuestion class]]);
