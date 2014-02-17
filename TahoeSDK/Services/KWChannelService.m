@@ -73,7 +73,7 @@
             } else {
                 [messages enumerateObjectsUsingBlock:^(KWMessage *message, NSUInteger idx, BOOL *stop) {
                     if ([weakSelf.delegate respondsToSelector:@selector(channelService:didReceiveMessage:)]) {
-                        NSLog(@"[TahoeSDK ChannelService] didReceiveMessage: %@", message.timestamp);
+                        NSLog(@"[TahoeSDK ChannelService] didReceiveMessage: %@", message.title);
                         [weakSelf.delegate channelService:weakSelf didReceiveMessage:message];
                     }
                 }];
@@ -90,8 +90,14 @@
     }];
 }
 
-- (void)triggerQuestionWithTitle:(NSString *)title choices:(NSArray *)choices channel:(NSString *)channel completion:(void(^)(NSError *error))block {
-    //TODO: xxx
+- (void)triggerQuestionWithTitle:(NSString *)title choices:(NSArray *)choices data:(NSDictionary *)data channel:(NSString *)channel completion:(void(^)(NSError *error))block {
+    KWMessageClient *messageClient = [[KWMessageClient alloc] init];
+    [messageClient triggerQuestionWithTitle:title choices:choices data:data channel:channel completion:^(NSError *error) {
+        if (block) {
+            NSLog(@"[TahoeSDK ChannelService] didTriggerQuestion: %@", title);
+            block(error);
+        }
+    }];
 }
 
 @end

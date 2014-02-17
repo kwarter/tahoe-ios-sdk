@@ -147,4 +147,58 @@
     }];
 }
 
+- (void)triggerQuestionWithTitle:(NSString *)title choices:(NSArray *)choices data:(NSDictionary *)data channel:(NSString *)channel completion:(void(^)(NSError *error))block {
+    
+    // Validate params
+    if (!title) {
+        if (block) {
+            NSDictionary *userInfo = @{KWClientErrorMissingParameterKey: @"title"};
+            NSError *paramsError = [NSError errorWithDomain:KWClientErrorDomain code:KWClientErrorMissingParameterError userInfo:userInfo];
+            block(paramsError);
+        }
+        return;
+    }
+    if (!choices) {
+        if (block) {
+            NSDictionary *userInfo = @{KWClientErrorMissingParameterKey: @"choices"};
+            NSError *paramsError = [NSError errorWithDomain:KWClientErrorDomain code:KWClientErrorMissingParameterError userInfo:userInfo];
+            block(paramsError);
+        }
+        return;
+    }
+    if (!channel) {
+        if (block) {
+            NSDictionary *userInfo = @{KWClientErrorMissingParameterKey: @"channel"};
+            NSError *paramsError = [NSError errorWithDomain:KWClientErrorDomain code:KWClientErrorMissingParameterError userInfo:userInfo];
+            block(paramsError);
+        }
+        return;
+    }
+    
+    
+    // Generate an UUID for the question
+    NSString *questionIdentifier = [[NSUUID UUID] UUIDString];
+    
+    // Build the parameters
+    NSMutableDictionary *mutableParams = [NSMutableDictionary dictionaryWithObjectsAndKeys:title, @"title",
+                                                                                           choices, @"choices",
+                                                                                           @"question", @"type",
+                                                                                           nil];
+    if (data) {
+        [mutableParams setValue:data forKey:@"data"];
+    }
+    NSDictionary *params = [NSDictionary dictionaryWithDictionary:mutableParams];
+    
+    NSString *path = [NSString stringWithFormat:@"/channels/%@/messages/%@", channel, questionIdentifier];
+    [[KWBaseAuthClient sharedClient] postPath:path parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        if (block) {
+            block(nil);
+        }
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        if (block) {
+            block(error);
+        }
+    }];
+}
+
 @end

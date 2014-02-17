@@ -18,4 +18,6 @@
 
 - (void)getRepliesForQuestion:(KWQuestion *)question completion:(void(^)(NSArray *replies, NSError *error))block;
 
+- (void)triggerQuestionWithTitle:(NSString *)title choices:(NSArray *)choices data:(NSDictionary *)data channel:(NSString *)channel completion:(void(^)(NSError *error))block;
+
 @end
