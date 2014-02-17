@@ -90,4 +90,8 @@
     }];
 }
 
+- (void)triggerQuestionWithTitle:(NSString *)title choices:(NSArray *)choices channel:(NSString *)channel completion:(void(^)(NSError *error))block {
+    //TODO: xxx
+}
+
 @end

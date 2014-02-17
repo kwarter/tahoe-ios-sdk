@@ -30,4 +30,9 @@
  */
 - (void)unsubscribe;
 
+/**
+ * Trigger a new question on this channel
+ */
+- (void)triggerQuestionWithTitle:(NSString *)title choices:(NSArray *)choices channel:(NSString *)channel completion:(void(^)(NSError *error))block;
+
 @end
