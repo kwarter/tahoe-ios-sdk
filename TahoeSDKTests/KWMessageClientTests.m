@@ -9,8 +9,9 @@
 #import <XCTest/XCTest.h>
 #import <OHHTTPStubs/OHHTTPStubs.h>
 #import "KWMessageClient.h"
+#import "KWBaseTests.h"
 
-@interface KWMessageClientTests : XCTestCase
+@interface KWMessageClientTests : KWBaseTests
 
 @end
 
@@ -145,13 +146,6 @@
         XCTFail(@"Login with username and password timed out.");
     }
 
-}
-
--(NSData*) getDataFromJsonFile: (NSString *) fileName {
-    NSBundle *myBundle = [NSBundle bundleForClass: [self class]];
-    NSString *filePath = [myBundle pathForResource:fileName ofType:@"json"];
-    NSData *responseData = [NSData dataWithContentsOfFile:filePath];
-    return responseData;
 }
 
 @end
