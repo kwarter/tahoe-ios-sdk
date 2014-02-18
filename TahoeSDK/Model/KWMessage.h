@@ -15,6 +15,7 @@
 
 @property (nonatomic, strong) NSString *identifier;
 @property (nonatomic, strong) NSString *title;
+@property (nonatomic, strong) NSDictionary *data;
 @property (nonatomic, strong) NSDate *timestamp;
 @property (nonatomic, strong) KWChannel *channel;
 @property (nonatomic, strong) NSOrderedSet *replyOrderedSet;

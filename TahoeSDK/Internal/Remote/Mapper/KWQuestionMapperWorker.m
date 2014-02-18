@@ -43,6 +43,10 @@
         [fields setValue:[resourceFields valueForKey:@"title"] forKey:@"title"];
     }
     
+    if ([resourceFields valueForKey:@"data"]) {
+        [fields setValue:[resourceFields valueForKey:@"data"] forKey:@"data"];
+    }
+    
     //TODO: this should be @"data.choices" in the future
     if ([resourceFields valueForKeyPath:@"choices"]) {
         [fields setValue:[resourceFields valueForKeyPath:@"choices"] forKey:@"choices"];

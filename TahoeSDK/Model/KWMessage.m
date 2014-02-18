@@ -14,6 +14,7 @@
 
 @dynamic identifier;
 @dynamic title;
+@dynamic data;
 @dynamic timestamp;
 @dynamic channel;
 @dynamic replyOrderedSet;
